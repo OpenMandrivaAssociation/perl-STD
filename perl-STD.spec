@@ -1,5 +1,5 @@
 %define upstream_name    STD
-%define upstream_version 32116
+%define upstream_version 20101111
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
