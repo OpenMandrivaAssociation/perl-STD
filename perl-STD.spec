@@ -6,14 +6,14 @@
 %endif
 
 Name:       perl-%{upstream_name}
-Version:    %perl_convert_version %{upstream_version}
-Release:    7
+Version:    %{upstream_version}
+Release:    8
 
 Summary:	%{upstream_name} perl module
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module//%{upstream_name}-%{upstream_version}.tar.gz
+Url:		https://metacpan.org/dist/STD
+Source0:	https://cpan.metacpan.org/authors/id/S/SO/SOREAR/STD-%{upstream_version}.tar.gz
 
 BuildRequires:	perl(File::ShareDir)
 BuildRequires:	perl(Module::Build)
