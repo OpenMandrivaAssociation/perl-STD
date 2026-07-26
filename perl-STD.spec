@@ -1,19 +1,17 @@
 %define upstream_name    STD
-%define upstream_version 20101111
-
 %if %{_use_internal_dependency_generator}
 %define __noautoreq 'perl\\(STD\\)|perl\\(STD_P6\\)|perl\\(RE_ast\\)|perl\\(STD::Cursor\\)|perl\\(STD_P5\\)'
 %endif
 
 Name:       perl-%{upstream_name}
-Version:    %{upstream_version}
-Release:    8
+Version:    20101111
+Release:    9
 
 Summary:	%{upstream_name} perl module
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		https://metacpan.org/dist/STD
-Source0:	https://cpan.metacpan.org/authors/id/S/SO/SOREAR/STD-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/S/SO/SOREAR/STD-%{version}.tar.gz
 
 BuildRequires:	perl(File::ShareDir)
 BuildRequires:	perl(Module::Build)
@@ -26,7 +24,7 @@ BuildArch:	noarch
 %{upstream_name} perl module.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 perl Build.PL installdirs=vendor
